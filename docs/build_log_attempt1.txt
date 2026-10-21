@@ -1,0 +1,165 @@
+﻿start 2026-10-21T22:17:32
+Visual Studio: C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools
+  VCPKG_ROOT=C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\vcpkg
+  cmake version 4.1.1-msvc1
+  
+  CMake suite maintained and supported by Kitware (kitware.com/cmake).
+  vcpkg package management program version 2025-09-03-4580816534ed8fd9634ac83d46471440edd82dfe
+  
+  See LICENSE.txt for license information.
+  ---- vcpkg x-update-baseline --add-initial-baseline ----
+  updated registry 'https://github.com/microsoft/vcpkg': baseline '' -> '11121428426dfd091ed52a01288b98d79da71671'
+  ---- vcpkg.json ----
+  {
+    "name": "sfml-lab",
+    "version-string": "1.0.0",
+    "dependencies": [
+      "sfml"
+    ],
+    "builtin-baseline": "11121428426dfd091ed52a01288b98d79da71671"
+  }
+  
+  ---- cmake --preset default ----
+  -- Building for: Visual Studio 18 2026
+  -- Running vcpkg install
+  Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\9e5e600b346ca0750719edaf491f26663352fa26\vcpkg.json: warning: $.license (an SPDX license expression): Unknown license identifier 'Unicode-3.0'. Known values are listed at https://spdx.org/licenses/
+    on expression: Zlib AND MIT AND Unicode-3.0
+                                    ^
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\77aa05248827668e56147c46de6d8c6113126bbc\vcpkg.json: warning: $.license (an SPDX license expression): Unknown license identifier 'Unicode-3.0'. Known values are listed at https://spdx.org/licenses/
+    on expression: MIT AND Unicode-3.0
+                           ^
+  Detecting compiler hash for triplet x64-windows...
+  A suitable version of powershell-core was not found (required v7.2.24).
+  Downloading https://github.com/PowerShell/PowerShell/releases/download/v7.2.24/PowerShell-7.2.24-win-x64.zip -> PowerShell-7.2.24-win-x64.zip
+  Successfully downloaded PowerShell-7.2.24-win-x64.zip
+  Extracting powershell-core...
+  A suitable version of 7zip was not found (required v25.1.0).
+  Downloading https://github.com/ip7z/7zip/releases/download/25.01/7z2501.exe -> 7z2501.7z.exe
+  Successfully downloaded 7z2501.7z.exe
+  Extracting 7zip...
+  A suitable version of 7zr was not found (required v25.1.0).
+  Downloading https://github.com/ip7z/7zip/releases/download/25.01/7zr.exe -> 7d84fcad-7zr.exe
+  Successfully downloaded 7d84fcad-7zr.exe
+  Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+  The following packages will be built and installed:
+    * brotli:x64-windows@1.2.0 -- git+https://github.com/microsoft/vcpkg@0fb79bb13588702a9e06057745b4aed95ce5c861
+    * bzip2[core,tool]:x64-windows@1.0.8#6 -- git+https://github.com/microsoft/vcpkg@2d029da682847c5ebdc54e4dbea001331a02207e
+    * cpp-unicodelib:x64-windows@2026-09-05 -- git+https://github.com/microsoft/vcpkg@77aa05248827668e56147c46de6d8c6113126bbc
+    * drlibs:x64-windows@2026-03-03 -- git+https://github.com/microsoft/vcpkg@bbc590aa326d0ba7fcd8049936488474d670bcf0
+    * egl-registry:x64-windows@2025-05-27 -- git+https://github.com/microsoft/vcpkg@980ed62fded868a1cb66460b32704aca030af013
+    * freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.14.3 -- git+https://github.com/microsoft/vcpkg@37a2b08e48b987c9b2a45a075fed1bc382e8de03
+    * harfbuzz[core,freetype]:x64-windows@14.6.0 -- git+https://github.com/microsoft/vcpkg@34757718aafa908834d6d6a225d7ce144ca82df6
+    * libflac[core,stack-protector]:x64-windows@1.5.0 -- git+https://github.com/microsoft/vcpkg@1b83f01536820e062681fe33109e44bb3f597aca
+    * libogg:x64-windows@1.3.6#1 -- git+https://github.com/microsoft/vcpkg@0631c72b35b0e169220b9c0fa9a6af4b229268cb
+    * libpng:x64-windows@1.6.59 -- git+https://github.com/microsoft/vcpkg@49b90a0bb7a74b5d9ff7cf3c494492855c65c375
+    * libssh2[core,openssl,zlib]:x64-windows@1.11.1#3 -- git+https://github.com/microsoft/vcpkg@54808a3c678f5f9122ca14d132d79dbca18c2763
+    * libvorbis:x64-windows@1.3.7#4 -- git+https://github.com/microsoft/vcpkg@149b8037ad8023f0f1b130616cf1a90238083cb0
+    * mbedtls[core,pthreads]:x64-windows@3.6.5#1 -- git+https://github.com/microsoft/vcpkg@da0d6fb28e3f39e7bd446d6f7b3fff42197e614a
+    * miniaudio:x64-windows@0.11.25 -- git+https://github.com/microsoft/vcpkg@f019711e3ca3673819cc9b8436af74b095dcb580
+    * opengl:x64-windows@2022-12-04#3 -- git+https://github.com/microsoft/vcpkg@c3ae71738f88449ebcd781cef60d9a253fa091d4
+    * opengl-registry:x64-windows@2026-08-03 -- git+https://github.com/microsoft/vcpkg@afb3b830710697505bc6d59cb1fbed9ca29c7e99
+    * openssl:x64-windows@3.6.5#2 -- git+https://github.com/microsoft/vcpkg@531e65d1e8dcc42d0ac01783393753bbe365be9d
+    * pthreads:x64-windows@3.0.0#14 -- git+https://github.com/microsoft/vcpkg@2e0a6df2800d3677b941dc6504f083965b7886d9
+    * qoi:x64-windows@2025-05-09 -- git+https://github.com/microsoft/vcpkg@d5eca25f8c2ff18993ef2475b2f2eb3f31b9331c
+      sfml[audio,core,graphics,network,window]:x64-windows@3.1.0 -- git+https://github.com/microsoft/vcpkg@9e5e600b346ca0750719edaf491f26663352fa26
+    * sheenbidi:x64-windows@3.0.0 -- git+https://github.com/microsoft/vcpkg@2c203248948321810bb7c427fe58a0c74d991298
+    * stb:x64-windows@2026-08-02 -- git+https://github.com/microsoft/vcpkg@06d8f21f98364f713ee45cd2183cb10d2ac026a8
+    * vcpkg-cmake:x64-windows@2025-08-07 -- git+https://github.com/microsoft/vcpkg@16b9390dfeaca6df7288ba3f827e40e48e5fc942
+    * vcpkg-cmake-config:x64-windows@2026-07-21 -- git+https://github.com/microsoft/vcpkg@51befcb03097f8d19c1c59f9ec3625e69d85322a
+    * vcpkg-cmake-get-vars:x64-windows@2025-05-29 -- git+https://github.com/microsoft/vcpkg@d6510f888dd526c7828f6b973349e7f30be51254
+    * vcpkg-tool-meson:x64-windows@1.12.1 -- git+https://github.com/microsoft/vcpkg@f9f5a01332d61d50927d4a801d185a8424e53edf
+    * wepoll:x64-windows@1.5.8#3 -- git+https://github.com/microsoft/vcpkg@83177ec0e0684dc043f5a7f7f800d1c8c8df47d9
+    * zlib:x64-windows@1.3.2#2 -- git+https://github.com/microsoft/vcpkg@f4f43a5a505cda1a0d1ff056be1fdba9e566242e
+  Additional packages (*) will be modified to complete this operation.
+  Restored 0 package(s) from C:\Users\test\AppData\Local\vcpkg\archives in 2.26 ms. Use --debug to see more details.
+  Installing 1/28 egl-registry:x64-windows@2025-05-27...
+  Building egl-registry:x64-windows@2025-05-27...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\980ed62fded868a1cb66460b32704aca030af013: info: installing from git registry git+https://github.com/microsoft/vcpkg@980ed62fded868a1cb66460b32704aca030af013
+  Downloading https://github.com/KhronosGroup/EGL-Registry/archive/3ae2b7c48690d2ce13cc6db3db02dfc0572be65e.tar.gz -> KhronosGroup-EGL-Registry-3ae2b7c48690d2ce13cc6db3db02dfc0572be65e.tar.gz
+  Successfully downloaded KhronosGroup-EGL-Registry-3ae2b7c48690d2ce13cc6db3db02dfc0572be65e.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/KhronosGroup-EGL-Registry-3ae2b7c48690d2ce13cc6db3db02dfc0572be65e.tar.gz
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/egl-registry/src/c0572be65e-4257a9ad9b.clean
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/egl-registry_x64-windows/share/egl-registry/copyright
+  -- Performing post-build validation
+  Starting submission of egl-registry:x64-windows@2025-05-27 to 1 binary cache(s) in the background
+  Elapsed time to handle egl-registry:x64-windows: 2.2 s
+  egl-registry:x64-windows package ABI: c7b6ce1b330338ced01990fedc1d11a1b8264ffb3160d9ca8b09877de1ef4c77
+  Installing 2/28 opengl-registry:x64-windows@2026-08-03...
+  Building opengl-registry:x64-windows@2026-08-03...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\afb3b830710697505bc6d59cb1fbed9ca29c7e99: info: installing from git registry git+https://github.com/microsoft/vcpkg@afb3b830710697505bc6d59cb1fbed9ca29c7e99
+  Downloading https://github.com/KhronosGroup/OpenGL-Registry/archive/e8f7cd0e35ac8d6f5667a021ff83d04b1fec41ef.tar.gz -> KhronosGroup-OpenGL-Registry-e8f7cd0e35ac8d6f5667a021ff83d04b1fec41ef.tar.gz
+  Successfully downloaded KhronosGroup-OpenGL-Registry-e8f7cd0e35ac8d6f5667a021ff83d04b1fec41ef.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/KhronosGroup-OpenGL-Registry-e8f7cd0e35ac8d6f5667a021ff83d04b1fec41ef.tar.gz
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/opengl-registry/src/4b1fec41ef-a126ad0aa2.clean
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl-registry_x64-windows/share/opengl-registry/copyright
+  -- Performing post-build validation
+  Starting submission of opengl-registry:x64-windows@2026-08-03 to 1 binary cache(s) in the background
+  Elapsed time to handle opengl-registry:x64-windows: 15 s
+  opengl-registry:x64-windows package ABI: 97e3f6847bcdb7fd0fcfb42ce8d864851ce0dcb1875b037df23baf60a14e52a4
+  Completed submission of egl-registry:x64-windows@2025-05-27 to 1 binary cache(s) in 130 ms
+  Installing 3/28 opengl:x64-windows@2022-12-04#3...
+  Building opengl:x64-windows@2022-12-04#3...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\c3ae71738f88449ebcd781cef60d9a253fa091d4: info: installing from git registry git+https://github.com/microsoft/vcpkg@c3ae71738f88449ebcd781cef60d9a253fa091d4
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/include/GL/gl.h
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/include/GL/glu.h
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/lib/OpenGL32.Lib
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/lib/GlU32.Lib
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/debug/lib/OpenGL32.Lib
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/debug/lib/GlU32.Lib
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/lib/pkgconfig/glu.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/lib/pkgconfig/opengl.pc
+  Downloading msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst, trying https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  Successfully downloaded msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  Downloading msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  Successfully downloaded msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/debug/lib/pkgconfig/glu.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/debug/lib/pkgconfig/opengl.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/share/opengl/usage
+  -- Performing post-build validation
+  Starting submission of opengl:x64-windows@2022-12-04#3 to 1 binary cache(s) in the background
+  Elapsed time to handle opengl:x64-windows: 2.8 s
+  opengl:x64-windows package ABI: 9949f9e7a6016f859376c802bd5d8437d7ef0a9d404b4aae58446648a0f98637
+  Completed submission of opengl-registry:x64-windows@2026-08-03 to 1 binary cache(s) in 602 ms
+  Installing 4/28 vcpkg-cmake:x64-windows@2025-08-07...
+  Building vcpkg-cmake:x64-windows@2025-08-07...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\16b9390dfeaca6df7288ba3f827e40e48e5fc942: info: installing from git registry git+https://github.com/microsoft/vcpkg@16b9390dfeaca6df7288ba3f827e40e48e5fc942
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg-port-config.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/copyright
+  -- Performing post-build validation
+  Starting submission of vcpkg-cmake:x64-windows@2025-08-07 to 1 binary cache(s) in the background
+  Elapsed time to handle vcpkg-cmake:x64-windows: 468 ms
+  vcpkg-cmake:x64-windows package ABI: 64bfbb4a1877bfa37819447642ddcb53a4aeb45d043ace04b9bc687b6bc627be
+  Completed submission of opengl:x64-windows@2022-12-04#3 to 1 binary cache(s) in 378 ms
+  Installing 5/28 wepoll:x64-windows@1.5.8#3...
+  Building wepoll:x64-windows@1.5.8#3...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\83177ec0e0684dc043f5a7f7f800d1c8c8df47d9: info: installing from git registry git+https://github.com/microsoft/vcpkg@83177ec0e0684dc043f5a7f7f800d1c8c8df47d9
+  Downloading https://github.com/piscisaureus/wepoll/archive/v1.5.8.tar.gz -> piscisaureus-wepoll-v1.5.8.tar.gz
+  Successfully downloaded piscisaureus-wepoll-v1.5.8.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/piscisaureus-wepoll-v1.5.8.tar.gz
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/wepoll/src/v1.5.8-019be712ef.clean
+  -- Found external ninja('1.12.1').
+  CMake Error at scripts/cmake/vcpkg_host_path_list.cmake:60 (message):
+    Operation REMOVE_DUPLICATES not recognized.
+  Call Stack (most recent call first):
+    C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake:246 (vcpkg_host_path_list)
+    C:/Users/test/AppData/Local/vcpkg/registries/git-trees/83177ec0e0684dc043f5a7f7f800d1c8c8df47d9/portfile.cmake:18 (vcpkg_cmake_configure)
+    scripts/ports.cmake:206 (include)
+  
+  
+  error: building wepoll:x64-windows failed with: BUILD_FAILED
+  See https://learn.microsoft.com/vcpkg/troubleshoot/build-failures?WT.mc_id=vcpkg_inproduct_cli for more information.
+  Elapsed time to handle wepoll:x64-windows: 1.5 s
+  Please ensure you're using the latest port files with `git pull` and `vcpkg update`.
+  Then check for known issues at:
+    https://github.com/microsoft/vcpkg/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+wepoll
+  You can submit a new issue at:
+    https://github.com/microsoft/vcpkg/issues/new?title=%5Bwepoll%5D%20build%20error%20on%20x64-windows&body=Copy%20issue%20body%20from%20C%3A%2FUsers%2Ftest%2Fsource%2Frepos%2FSFML_Lab%2Fbuild%2Fvcpkg_installed%2Fvcpkg%2Fissue_body.md
+  You can also submit an issue by running (GitHub CLI must be installed):
+    "C:\Program Files\GitHub CLI\gh.exe" issue create -R microsoft/vcpkg --title "[wepoll] Build failure on x64-windows" --body-file C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/issue_body.md
+  Completed submission of vcpkg-cmake:x64-windows@2025-08-07 to 1 binary cache(s) in 191 ms
+  -- Running vcpkg install - failed

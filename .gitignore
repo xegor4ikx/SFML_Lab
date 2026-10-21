@@ -1,0 +1,7 @@
+# службові папки CMake / vcpkg / Visual Studio
+build/
+out/
+.vs/
+vcpkg_installed/
+CMakeUserPresets.json
+*.user

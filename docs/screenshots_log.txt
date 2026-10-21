@@ -1,0 +1,26 @@
+﻿start 2026-10-21T22:36:57
+Visual Studio: C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools
+BUILD OK: C:\Users\test\source\repos\SFML_Lab\build\Debug\SFML_Lab.exe
+Scenario w01_ready : --layout 2
+  screenshot w01_ready.png (1282 x 829)
+Scenario w02_chess_pause : --layout 2 --angle 25 --mu 0.05 --start --pause-at 3
+  screenshot w02_chess_pause.png (1282 x 829)
+Scenario w03_chess_finish : --layout 2 --angle 25 --mu 0.05 --start
+  screenshot w03_chess_finish.png (1282 x 829)
+Scenario w04_none_finish : --layout 1 --angle 25 --mu 0.10 --start
+  screenshot w04_none_finish.png (1282 x 829)
+Scenario w05_zigzag_finish : --layout 3 --angle 25 --mu 0.05 --start
+  screenshot w05_zigzag_finish.png (1282 x 829)
+Scenario w06_zigzag_stop : --layout 3 --angle 25 --mu 0.20 --start
+  screenshot w06_zigzag_stop.png (1282 x 829)
+Scenario w07_funnel_finish : --layout 4 --angle 25 --mu 0.10 --start
+  screenshot w07_funnel_finish.png (1282 x 829)
+Scenario w08_no_motion : --layout 1 --angle 25 --mu 0.50 --start
+  screenshot w08_no_motion.png (1282 x 829)
+Scenario w09: keyboard
+  screenshot w09a_keys_params.png (1282 x 829)
+  screenshot w09b_keys_results.png (1282 x 829)
+Scenario w10: mouse
+  screenshot w10a_mouse_layout.png (1282 x 829)
+  screenshot w10b_mouse_run.png (1282 x 829)
+DONE 2026-10-21T22:38:59. Screenshots: C:\Users\test\source\repos\SFML_Lab\docs\screenshots

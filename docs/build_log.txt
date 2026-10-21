@@ -1,0 +1,460 @@
+﻿start 2026-10-21T22:22:59
+Visual Studio: C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools
+  VCPKG_ROOT=C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\vcpkg
+  cmake version 4.1.1-msvc1
+  
+  CMake suite maintained and supported by Kitware (kitware.com/cmake).
+  vcpkg package management program version 2025-09-03-4580816534ed8fd9634ac83d46471440edd82dfe
+  
+  See LICENSE.txt for license information.
+  ---- vcpkg.json ----
+  {
+    "name": "sfml-lab",
+    "version-string": "1.0.0",
+    "dependencies": [
+      "sfml"
+    ],
+    "builtin-baseline": "74e6536215718009aae747d86d84b78376bf9e09"
+  }
+  
+  ---- cmake --preset default ----
+  -- Running vcpkg install
+  Detecting compiler hash for triplet x64-windows...
+  Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+  The following packages will be rebuilt:
+    * egl-registry:x64-windows@2024-01-25 -- git+https://github.com/microsoft/vcpkg@d883db43133dd223c4ffdbef4193943f6784d43a
+    * opengl:x64-windows@2022-12-04#3 -- git+https://github.com/microsoft/vcpkg@c3ae71738f88449ebcd781cef60d9a253fa091d4
+    * opengl-registry:x64-windows@2024-02-10#1 -- git+https://github.com/microsoft/vcpkg@22f7aa58ee78c9f0db904b6251e9265f2be26f9d
+    * vcpkg-cmake:x64-windows@2024-04-23 -- git+https://github.com/microsoft/vcpkg@e74aa1e8f93278a8e71372f1fa08c3df420eb840
+  The following packages will be built and installed:
+    * brotli:x64-windows@1.1.0#1 -- git+https://github.com/microsoft/vcpkg@4e5b5ae1ad26c80535c893cc0307121f0398549e
+    * bzip2[core,tool]:x64-windows@1.0.8#6 -- git+https://github.com/microsoft/vcpkg@2d029da682847c5ebdc54e4dbea001331a02207e
+    * freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3 -- git+https://github.com/microsoft/vcpkg@8a2c633dcc14eaabdb31cf4637242f4e3c2f3fa2
+    * libflac[core,stack-protector]:x64-windows@1.5.0 -- git+https://github.com/microsoft/vcpkg@1b83f01536820e062681fe33109e44bb3f597aca
+    * libogg:x64-windows@1.3.6#1 -- git+https://github.com/microsoft/vcpkg@0631c72b35b0e169220b9c0fa9a6af4b229268cb
+    * libpng:x64-windows@1.6.50 -- git+https://github.com/microsoft/vcpkg@54b6eefbef1cb0f477c6eb54e2236badd140feea
+    * libvorbis:x64-windows@1.3.7#4 -- git+https://github.com/microsoft/vcpkg@149b8037ad8023f0f1b130616cf1a90238083cb0
+    * miniaudio:x64-windows@0.11.23 -- git+https://github.com/microsoft/vcpkg@a61df2a6c638fea68c6ad25c979bac76c33b29af
+      sfml[audio,core,graphics,network,window]:x64-windows@3.0.2 -- git+https://github.com/microsoft/vcpkg@ffed70e09662f9b535761716ea9b9623a461b9df
+    * stb:x64-windows@2024-07-29#1 -- git+https://github.com/microsoft/vcpkg@c362152d1d02973e7b1ce777960f8a6876656560
+    * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
+    * zlib:x64-windows@1.3.1 -- git+https://github.com/microsoft/vcpkg@3f05e04b9aededb96786a911a16193cdb711f0c9
+  Additional packages (*) will be modified to complete this operation.
+  Restored 0 package(s) from C:\Users\test\AppData\Local\vcpkg\archives in 781 us. Use --debug to see more details.
+  Removing 1/20 vcpkg-cmake:x64-windows
+  Elapsed time to handle vcpkg-cmake:x64-windows: 10.2 ms
+  Removing 2/20 opengl:x64-windows
+  Elapsed time to handle opengl:x64-windows: 30.5 ms
+  Removing 3/20 opengl-registry:x64-windows
+  Elapsed time to handle opengl-registry:x64-windows: 45.6 ms
+  Removing 4/20 egl-registry:x64-windows
+  Elapsed time to handle egl-registry:x64-windows: 29.6 ms
+  Installing 5/20 egl-registry:x64-windows@2024-01-25...
+  Building egl-registry:x64-windows@2024-01-25...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\d883db43133dd223c4ffdbef4193943f6784d43a: info: installing from git registry git+https://github.com/microsoft/vcpkg@d883db43133dd223c4ffdbef4193943f6784d43a
+  Downloading https://github.com/KhronosGroup/EGL-Registry/archive/7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz -> KhronosGroup-EGL-Registry-7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz
+  Successfully downloaded KhronosGroup-EGL-Registry-7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/KhronosGroup-EGL-Registry-7db3005d4c2cb439f129a0adc931f3274f9019e6.tar.gz
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/egl-registry/src/274f9019e6-49d6bdb34a.clean
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/egl-registry_x64-windows/share/egl-registry/copyright
+  -- Performing post-build validation
+  Starting submission of egl-registry:x64-windows@2024-01-25 to 1 binary cache(s) in the background
+  Elapsed time to handle egl-registry:x64-windows: 2.5 s
+  egl-registry:x64-windows package ABI: b9684e042f1f7c1e13513855ef82da77fd2441757bc58c813d89733630aa9cef
+  Installing 6/20 opengl-registry:x64-windows@2024-02-10#1...
+  Building opengl-registry:x64-windows@2024-02-10#1...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\22f7aa58ee78c9f0db904b6251e9265f2be26f9d: info: installing from git registry git+https://github.com/microsoft/vcpkg@22f7aa58ee78c9f0db904b6251e9265f2be26f9d
+  Downloading https://github.com/KhronosGroup/OpenGL-Registry/archive/3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz -> KhronosGroup-OpenGL-Registry-3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz
+  Successfully downloaded KhronosGroup-OpenGL-Registry-3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/KhronosGroup-OpenGL-Registry-3530768138c5ba3dfbb2c43c830493f632f7ea33.tar.gz
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/opengl-registry/src/f632f7ea33-4952f9ace9.clean
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl-registry_x64-windows/share/opengl-registry/copyright
+  -- Performing post-build validation
+  Starting submission of opengl-registry:x64-windows@2024-02-10#1 to 1 binary cache(s) in the background
+  Elapsed time to handle opengl-registry:x64-windows: 18 s
+  opengl-registry:x64-windows package ABI: b36b2021b18cc9106d92a52c1e078162e34bad77ad0a7b2c6cf117308788b7ff
+  Completed submission of egl-registry:x64-windows@2024-01-25 to 1 binary cache(s) in 98.2 ms
+  Installing 7/20 opengl:x64-windows@2022-12-04#3...
+  Building opengl:x64-windows@2022-12-04#3...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\c3ae71738f88449ebcd781cef60d9a253fa091d4: info: installing from git registry git+https://github.com/microsoft/vcpkg@c3ae71738f88449ebcd781cef60d9a253fa091d4
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/include/GL/gl.h
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/include/GL/glu.h
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/lib/OpenGL32.Lib
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/lib/GlU32.Lib
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/debug/lib/OpenGL32.Lib
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/debug/lib/GlU32.Lib
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/lib/pkgconfig/glu.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/lib/pkgconfig/opengl.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/debug/lib/pkgconfig/glu.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/debug/lib/pkgconfig/opengl.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/opengl_x64-windows/share/opengl/usage
+  -- Performing post-build validation
+  Starting submission of opengl:x64-windows@2022-12-04#3 to 1 binary cache(s) in the background
+  Elapsed time to handle opengl:x64-windows: 482 ms
+  opengl:x64-windows package ABI: 4cd30f3b3139cae116c34cfc9732a0f9203904e7af30b22963df8e30d68d63b2
+  Completed submission of opengl-registry:x64-windows@2024-02-10#1 to 1 binary cache(s) in 341 ms
+  Installing 8/20 stb:x64-windows@2024-07-29#1...
+  Building stb:x64-windows@2024-07-29#1...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\c362152d1d02973e7b1ce777960f8a6876656560: info: installing from git registry git+https://github.com/microsoft/vcpkg@c362152d1d02973e7b1ce777960f8a6876656560
+  Downloading https://github.com/nothings/stb/archive/f75e8d1cad7d90d72ef7a4661f1b994ef78b4e31.tar.gz -> nothings-stb-f75e8d1cad7d90d72ef7a4661f1b994ef78b4e31.tar.gz
+  Successfully downloaded nothings-stb-f75e8d1cad7d90d72ef7a4661f1b994ef78b4e31.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/nothings-stb-f75e8d1cad7d90d72ef7a4661f1b994ef78b4e31.tar.gz
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/stb/src/4ef78b4e31-bf024d35de.clean
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/stb_x64-windows/share/stb/FindStb.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/stb_x64-windows/share/stb/vcpkg-cmake-wrapper.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/stb_x64-windows/share/stb/usage
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/stb_x64-windows/share/stb/copyright
+  -- Performing post-build validation
+  Starting submission of stb:x64-windows@2024-07-29#1 to 1 binary cache(s) in the background
+  Elapsed time to handle stb:x64-windows: 2.6 s
+  stb:x64-windows package ABI: bbf0c91f55e50d6a9f88e27da9d641557d76de853a2e84e62363ce7e7f927874
+  Completed submission of opengl:x64-windows@2022-12-04#3 to 1 binary cache(s) in 79 ms
+  Installing 9/20 vcpkg-cmake:x64-windows@2024-04-23...
+  Building vcpkg-cmake:x64-windows@2024-04-23...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\e74aa1e8f93278a8e71372f1fa08c3df420eb840: info: installing from git registry git+https://github.com/microsoft/vcpkg@e74aa1e8f93278a8e71372f1fa08c3df420eb840
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg-port-config.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake_x64-windows/share/vcpkg-cmake/copyright
+  -- Performing post-build validation
+  Starting submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in the background
+  Elapsed time to handle vcpkg-cmake:x64-windows: 211 ms
+  vcpkg-cmake:x64-windows package ABI: 0b83db79c8c4827895a95482c01c1cf64fa9be60fdd704b8cbc2eddc5b251067
+  Completed submission of stb:x64-windows@2024-07-29#1 to 1 binary cache(s) in 129 ms
+  Installing 10/20 zlib:x64-windows@1.3.1...
+  Building zlib:x64-windows@1.3.1...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\3f05e04b9aededb96786a911a16193cdb711f0c9: info: installing from git registry git+https://github.com/microsoft/vcpkg@3f05e04b9aededb96786a911a16193cdb711f0c9
+  Downloading https://github.com/madler/zlib/archive/v1.3.1.tar.gz -> madler-zlib-v1.3.1.tar.gz
+  Successfully downloaded madler-zlib-v1.3.1.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/madler-zlib-v1.3.1.tar.gz
+  -- Applying patch 0001-Prevent-invalid-inclusions-when-HAVE_-is-set-to-0.patch
+  -- Applying patch 0002-build-static-or-shared-not-both.patch
+  -- Applying patch 0003-android-and-mingw-fixes.patch
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/zlib/src/v1.3.1-2e5db616bf.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/share/zlib/vcpkg-cmake-wrapper.cmake
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/lib/pkgconfig/zlib.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/debug/lib/pkgconfig/zlib.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/share/zlib/copyright
+  -- Performing post-build validation
+  Starting submission of zlib:x64-windows@1.3.1 to 1 binary cache(s) in the background
+  Elapsed time to handle zlib:x64-windows: 13 s
+  zlib:x64-windows package ABI: 07d8ffe10ede45c0d776cd2ea0c7891c1b60ee64755915ff57baa020d8767a5d
+  Completed submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in 108 ms
+  Installing 11/20 vcpkg-cmake-config:x64-windows@2024-05-23...
+  Building vcpkg-cmake-config:x64-windows@2024-05-23...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\97a63e4bc1a17422ffe4eff71da53b4b561a7841: info: installing from git registry git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/copyright
+  -- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
+  Starting submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in the background
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 176 ms
+  vcpkg-cmake-config:x64-windows package ABI: d26251d55921c80c0faa7db370b2ca52d637eba3d620fa22143381c511db329e
+  Installing 12/20 libpng:x64-windows@1.6.50...
+  Building libpng:x64-windows@1.6.50...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\54b6eefbef1cb0f477c6eb54e2236badd140feea: info: installing from git registry git+https://github.com/microsoft/vcpkg@54b6eefbef1cb0f477c6eb54e2236badd140feea
+  Downloading https://github.com/pnggroup/libpng/archive/v1.6.50.tar.gz -> pnggroup-libpng-v1.6.50.tar.gz
+  Successfully downloaded pnggroup-libpng-v1.6.50.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/pnggroup-libpng-v1.6.50.tar.gz
+  -- Applying patch cmake.patch
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/libpng/src/v1.6.50-13b6aa9451.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libpng_x64-windows/share/png/vcpkg-cmake-wrapper.cmake
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libpng_x64-windows/share/libpng/libpng-config.cmake
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libpng_x64-windows/lib/pkgconfig/libpng16.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libpng_x64-windows/debug/lib/pkgconfig/libpng16.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libpng_x64-windows/debug/lib/pkgconfig/libpng.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libpng_x64-windows/lib/pkgconfig/libpng.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libpng_x64-windows/share/libpng/usage
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libpng_x64-windows/share/libpng/copyright
+  -- Performing post-build validation
+  Starting submission of libpng:x64-windows@1.6.50 to 1 binary cache(s) in the background
+  Elapsed time to handle libpng:x64-windows: 11 s
+  libpng:x64-windows package ABI: 083ddbfbaf6f7a15e3ba94baeb56b435deec723996b335bbf3a132cb3d148a99
+  Completed submission of zlib:x64-windows@1.3.1 to 1 binary cache(s) in 185 ms
+  Completed submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in 72 ms
+  Installing 13/20 bzip2[core,tool]:x64-windows@1.0.8#6...
+  Building bzip2[core,tool]:x64-windows@1.0.8#6...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\2d029da682847c5ebdc54e4dbea001331a02207e: info: installing from git registry git+https://github.com/microsoft/vcpkg@2d029da682847c5ebdc54e4dbea001331a02207e
+  Downloading bzip2-1.0.8.tar.gz, trying https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+  Successfully downloaded bzip2-1.0.8.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/bzip2-1.0.8.tar.gz
+  -- Applying patch fix-import-export-macros.patch
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/bzip2/src/bzip2-1-336d4794a3.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/bzip2_x64-windows/lib/pkgconfig/bzip2.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/bzip2_x64-windows/debug/lib/pkgconfig/bzip2.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/bzip2_x64-windows/share/bzip2/copyright
+  -- Performing post-build validation
+  Starting submission of bzip2[core,tool]:x64-windows@1.0.8#6 to 1 binary cache(s) in the background
+  Elapsed time to handle bzip2:x64-windows: 8.9 s
+  bzip2:x64-windows package ABI: 936871bba6053c6ad41da828822a69a4e255d7060e52fc68f9805f737e13c40e
+  Completed submission of libpng:x64-windows@1.6.50 to 1 binary cache(s) in 231 ms
+  Installing 14/20 brotli:x64-windows@1.1.0#1...
+  Building brotli:x64-windows@1.1.0#1...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\4e5b5ae1ad26c80535c893cc0307121f0398549e: info: installing from git registry git+https://github.com/microsoft/vcpkg@4e5b5ae1ad26c80535c893cc0307121f0398549e
+  Downloading https://github.com/google/brotli/archive/v1.1.0.tar.gz -> google-brotli-v1.1.0.tar.gz
+  Successfully downloaded google-brotli-v1.1.0.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/google-brotli-v1.1.0.tar.gz
+  -- Applying patch install.patch
+  -- Applying patch fix-arm-uwp.patch
+  -- Applying patch pkgconfig.patch
+  -- Applying patch emscripten.patch
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/brotli/src/v1.1.0-958bece74c.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/lib/pkgconfig/libbrotlicommon.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/lib/pkgconfig/libbrotlidec.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/lib/pkgconfig/libbrotlienc.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/pkgconfig/libbrotlicommon.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/pkgconfig/libbrotlidec.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/pkgconfig/libbrotlienc.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/share/brotli/usage
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/share/brotli/copyright
+  -- Performing post-build validation
+  Starting submission of brotli:x64-windows@1.1.0#1 to 1 binary cache(s) in the background
+  Elapsed time to handle brotli:x64-windows: 20 s
+  brotli:x64-windows package ABI: 4a97e4ec3d8c94e25664781887f9260693eed1ce1c0846b13b9a1e0346e69623
+  Completed submission of bzip2[core,tool]:x64-windows@1.0.8#6 to 1 binary cache(s) in 165 ms
+  Installing 15/20 freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3...
+  Building freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\8a2c633dcc14eaabdb31cf4637242f4e3c2f3fa2: info: installing from git registry git+https://github.com/microsoft/vcpkg@8a2c633dcc14eaabdb31cf4637242f4e3c2f3fa2
+  Downloading https://gitlab.freedesktop.org//freetype/freetype/-/archive/VER-2-13-3/freetype-VER-2-13-3.tar.gz -> freetype-freetype-VER-2-13-3.tar.gz
+  Successfully downloaded freetype-freetype-VER-2-13-3.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/freetype-freetype-VER-2-13-3.tar.gz
+  -- Applying patch 0003-Fix-UWP.patch
+  -- Applying patch brotli-static.patch
+  -- Applying patch bzip2.patch
+  -- Applying patch fix-exports.patch
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/freetype/src/VER-2-13-3-8b423a038b.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/freetype_x64-windows/lib/pkgconfig/freetype2.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/freetype_x64-windows/debug/lib/pkgconfig/freetype2.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/freetype_x64-windows/share/freetype/usage
+  -- Performing post-build validation
+  Starting submission of freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3 to 1 binary cache(s) in the background
+  Elapsed time to handle freetype:x64-windows: 16 s
+  freetype:x64-windows package ABI: f9135355a289e90185aa09be9dd678b3aa7a3a30f9b75e29cdb74ad8f4a1f7ad
+  Completed submission of brotli:x64-windows@1.1.0#1 to 1 binary cache(s) in 542 ms
+  Installing 16/20 miniaudio:x64-windows@0.11.23...
+  Building miniaudio:x64-windows@0.11.23...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\a61df2a6c638fea68c6ad25c979bac76c33b29af: info: installing from git registry git+https://github.com/microsoft/vcpkg@a61df2a6c638fea68c6ad25c979bac76c33b29af
+  Downloading https://github.com/mackron/miniaudio/archive/0.11.23.tar.gz -> mackron-miniaudio-0.11.23.tar.gz
+  Successfully downloaded mackron-miniaudio-0.11.23.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/mackron-miniaudio-0.11.23.tar.gz
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/miniaudio/src/0.11.23-fcc418cb79.clean
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/miniaudio_x64-windows/include/miniaudio.h
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/miniaudio_x64-windows/share/miniaudio/copyright
+  -- Performing post-build validation
+  Starting submission of miniaudio:x64-windows@0.11.23 to 1 binary cache(s) in the background
+  Elapsed time to handle miniaudio:x64-windows: 1.9 s
+  miniaudio:x64-windows package ABI: 8cd21422192d32d3836f5f1560d44d900d97bca9204a933cdc37dadeb7355f60
+  Completed submission of freetype[brotli,bzip2,core,png,zlib]:x64-windows@2.13.3 to 1 binary cache(s) in 384 ms
+  Installing 17/20 libogg:x64-windows@1.3.6#1...
+  Building libogg:x64-windows@1.3.6#1...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\0631c72b35b0e169220b9c0fa9a6af4b229268cb: info: installing from git registry git+https://github.com/microsoft/vcpkg@0631c72b35b0e169220b9c0fa9a6af4b229268cb
+  Downloading https://github.com/xiph/ogg/archive/v1.3.6.tar.gz -> xiph-ogg-v1.3.6.tar.gz
+  Successfully downloaded xiph-ogg-v1.3.6.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/xiph-ogg-v1.3.6.tar.gz
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/libogg/src/v1.3.6-4ad11a7327.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libogg_x64-windows/lib/pkgconfig/ogg.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libogg_x64-windows/debug/lib/pkgconfig/ogg.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libogg_x64-windows/share/libogg/copyright
+  -- Performing post-build validation
+  Starting submission of libogg:x64-windows@1.3.6#1 to 1 binary cache(s) in the background
+  Elapsed time to handle libogg:x64-windows: 25 s
+  libogg:x64-windows package ABI: 44181a9675203f4e41762274e78ad6f6a7c88b3e89bf9ae1b62d103373a0782c
+  Completed submission of miniaudio:x64-windows@0.11.23 to 1 binary cache(s) in 528 ms
+  Installing 18/20 libvorbis:x64-windows@1.3.7#4...
+  Building libvorbis:x64-windows@1.3.7#4...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\149b8037ad8023f0f1b130616cf1a90238083cb0: info: installing from git registry git+https://github.com/microsoft/vcpkg@149b8037ad8023f0f1b130616cf1a90238083cb0
+  Downloading https://github.com/xiph/vorbis/archive/v1.3.7.tar.gz -> xiph-vorbis-v1.3.7.tar.gz
+  Successfully downloaded xiph-vorbis-v1.3.7.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/xiph-vorbis-v1.3.7.tar.gz
+  -- Applying patch 0001-Dont-export-vorbisenc-functions.patch
+  -- Applying patch 0002-Fixup-pkgconfig-libs.patch
+  -- Applying patch 0003-def-mingw-compat.patch
+  -- Applying patch 0004-ogg-find-dependency.patch
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/libvorbis/src/v1.3.7-c32164610e.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libvorbis_x64-windows/lib/pkgconfig/vorbis.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libvorbis_x64-windows/lib/pkgconfig/vorbisenc.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libvorbis_x64-windows/lib/pkgconfig/vorbisfile.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libvorbis_x64-windows/debug/lib/pkgconfig/vorbis.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libvorbis_x64-windows/debug/lib/pkgconfig/vorbisenc.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libvorbis_x64-windows/debug/lib/pkgconfig/vorbisfile.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libvorbis_x64-windows/share/libvorbis/usage
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libvorbis_x64-windows/share/libvorbis/copyright
+  -- Performing post-build validation
+  Starting submission of libvorbis:x64-windows@1.3.7#4 to 1 binary cache(s) in the background
+  Elapsed time to handle libvorbis:x64-windows: 13 s
+  libvorbis:x64-windows package ABI: 178d22ccdfd0fe118263ebde58dfd022f26329bb54c5419b8a8cf84e2722e374
+  Completed submission of libogg:x64-windows@1.3.6#1 to 1 binary cache(s) in 214 ms
+  Installing 19/20 libflac[core,stack-protector]:x64-windows@1.5.0...
+  Building libflac[core,stack-protector]:x64-windows@1.5.0...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\1b83f01536820e062681fe33109e44bb3f597aca: info: installing from git registry git+https://github.com/microsoft/vcpkg@1b83f01536820e062681fe33109e44bb3f597aca
+  Downloading https://github.com/xiph/flac/archive/1.5.0.tar.gz -> xiph-flac-1.5.0.tar.gz
+  Successfully downloaded xiph-flac-1.5.0.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/xiph-flac-1.5.0.tar.gz
+  -- Applying patch android-cmake.diff
+  -- Applying patch fix-compile-options.patch
+  -- Applying patch fix-find-threads.patch
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/libflac/src/1.5.0-5ec0185c23.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libflac_x64-windows/lib/pkgconfig/flac++.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libflac_x64-windows/lib/pkgconfig/flac.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libflac_x64-windows/debug/lib/pkgconfig/flac++.pc
+  -- Fixing pkgconfig file: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libflac_x64-windows/debug/lib/pkgconfig/flac.pc
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libflac_x64-windows/share/libflac/copyright
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/libflac_x64-windows/share/libflac/usage
+  -- Performing post-build validation
+  Starting submission of libflac[core,stack-protector]:x64-windows@1.5.0 to 1 binary cache(s) in the background
+  Elapsed time to handle libflac:x64-windows: 35 s
+  libflac:x64-windows package ABI: 6ff67054b478bff7f42338e3c6e8cab896a426f1b5020b117e34810bb3cca65a
+  Completed submission of libvorbis:x64-windows@1.3.7#4 to 1 binary cache(s) in 239 ms
+  Installing 20/20 sfml[audio,core,graphics,network,window]:x64-windows@3.0.2...
+  Building sfml[audio,core,graphics,network,window]:x64-windows@3.0.2...
+  C:\Users\test\AppData\Local\vcpkg\registries\git-trees\ffed70e09662f9b535761716ea9b9623a461b9df: info: installing from git registry git+https://github.com/microsoft/vcpkg@ffed70e09662f9b535761716ea9b9623a461b9df
+  Downloading https://github.com/SFML/SFML/archive/3.0.2.tar.gz -> SFML-SFML-3.0.2.tar.gz
+  Successfully downloaded SFML-SFML-3.0.2.tar.gz
+  -- Extracting source C:/Users/test/AppData/Local/vcpkg/downloads/SFML-SFML-3.0.2.tar.gz
+  -- Applying patch 01-fix-dependency-resolve.patch
+  -- Applying patch 03-fix-android-install-path.patch
+  -- Using source at C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/blds/sfml/src/3.0.2-1655203d87.clean
+  -- Found external ninja('1.12.1').
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/test/AppData/Local/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+  -- Installing: C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/vcpkg/pkgs/sfml_x64-windows/share/sfml/copyright
+  -- Performing post-build validation
+  Starting submission of sfml[audio,core,graphics,network,window]:x64-windows@3.0.2 to 1 binary cache(s) in the background
+  Elapsed time to handle sfml:x64-windows: 59 s
+  sfml:x64-windows package ABI: 93fca0933efae7d2083e50e50753eea2822d2b7d2fa69c3dfd1769c4bfef99df
+  Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+  Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
+  Packages installed in this vcpkg installation declare the following licenses:
+  (FTL OR GPL-2.0-or-later)
+  (MIT OR CC-PDDC)
+  (Unlicense OR MIT-0)
+  BSD-3-Clause
+  MIT
+  Zlib
+  bzip2-1.0.6
+  libpng-2.0
+  The package sfml provides CMake targets:
+  
+      find_package(SFML COMPONENTS Network Graphics Window Audio System CONFIG REQUIRED)
+      target_link_libraries(main PRIVATE SFML::Network SFML::Graphics SFML::Window SFML::Audio SFML::System)
+  
+      # If you want SFML to provide an implementation of main():
+      target_link_libraries(main PRIVATE SFML::Main)
+  
+  Completed submission of libflac[core,stack-protector]:x64-windows@1.5.0 to 1 binary cache(s) in 248 ms
+  Waiting for 1 remaining binary cache submissions...
+  Completed submission of sfml[audio,core,graphics,network,window]:x64-windows@3.0.2 to 1 binary cache(s) in 1.3 s (1/1)
+  All requested installations completed successfully in: 3.7 min
+  -- Running vcpkg install - done
+  -- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+  -- The CXX compiler identification is MSVC 19.50.35721.0
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe - skipped
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  -- Found SFML 3.0.2 in C:/Users/test/source/repos/SFML_Lab/build/vcpkg_installed/x64-windows/share/sfml
+  -- Configuring done (241.2s)
+  -- Generating done (0.1s)
+  -- Build files have been written to: C:/Users/test/source/repos/SFML_Lab/build
+  ---- cmake --build --preset default ----
+  MSBuild version 18.0.5+e22287bf1 for .NET Framework
+  
+    1>Checking Build System
+    Building Custom Rule C:/Users/test/source/repos/SFML_Lab/CMakeLists.txt
+    main.cpp
+    physics.cpp
+    experiment.cpp
+    Generating Code...
+    SFML_Lab.vcxproj -> C:\Users\test\source\repos\SFML_Lab\build\Debug\SFML_Lab.exe
+    Building Custom Rule C:/Users/test/source/repos/SFML_Lab/CMakeLists.txt
+BUILD OK: C:\Users\test\source\repos\SFML_Lab\build\Debug\SFML_Lab.exe
+Experiment: SFML_Lab --experiment
+  Saved 624 runs to C:\Users\test\source\repos\SFML_Lab\docs\experiment_results.csv
+Scenario w01_ready : --layout 2
+  screenshot w01_ready.png (1282 x 829)
+Scenario w02_chess_pause : --layout 2 --angle 25 --mu 0.05 --start --pause-at 3
+  screenshot w02_chess_pause.png (1282 x 829)
+Scenario w03_chess_finish : --layout 2 --angle 25 --mu 0.05 --start
+  screenshot w03_chess_finish.png (1282 x 829)
+Scenario w04_none_finish : --layout 1 --angle 25 --mu 0.10 --start
+  screenshot w04_none_finish.png (1282 x 829)
+Scenario w05_zigzag_finish : --layout 3 --angle 25 --mu 0.05 --start
+  screenshot w05_zigzag_finish.png (1282 x 829)
+Scenario w06_zigzag_stop : --layout 3 --angle 25 --mu 0.20 --start
+  screenshot w06_zigzag_stop.png (1282 x 829)
+Scenario w07_funnel_finish : --layout 4 --angle 25 --mu 0.10 --start
+  screenshot w07_funnel_finish.png (1282 x 829)
+Scenario w08_no_motion : --layout 1 --angle 25 --mu 0.50 --start
+  screenshot w08_no_motion.png (1282 x 829)
+Scenario w09: keyboard
+  screenshot w09a_keys_params.png (1282 x 829)
+  screenshot w09b_keys_results.png (1282 x 829)
+Scenario w10: mouse
+  screenshot w10a_mouse_layout.png (1282 x 829)
+  screenshot w10b_mouse_run.png (1282 x 829)
+DONE 2026-10-21T22:29:10. Screenshots: C:\Users\test\source\repos\SFML_Lab\docs\screenshots
